@@ -1,0 +1,17 @@
+def no_sort(x):
+    copy_list = x
+    for num in x:
+        my_counter = 0
+        for cp_num in copy_list:
+            if num < cp_num:
+                my_counter += 1
+        if my_counter == 0:
+            return num
+        if my_counter > 0:
+            continue
+
+a = [1,2455,3,7,2454,3447575]
+
+b = no_sort(a)
+print (b)
+
